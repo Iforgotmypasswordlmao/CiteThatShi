@@ -1,0 +1,123 @@
+/*
+This article carried my ass for this tabs shit
+https://dev.to/joxx/building-a-tab-component-with-pure-css-using-radio-and-label-tags-200b
+*/
+:root {
+    --aquamarine: #7AE7C7;
+    --tea_green: #D6FFB7;
+    --maize: #FFF689;
+    --violet: #58355E;
+    --red: #EC0B43;
+}
+
+body {
+    width: 15rem;
+}
+/* Hide the radio inputs */
+.tabs input[type="radio"] {
+    display: none;
+}
+
+/* Style the content sections */
+.tab-content {
+    display: none;
+    order: 99;
+    background-color: var(--aquamarine);
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the labels (tabs) */
+.tab-label {
+    width: auto;
+    order: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-size: 0.9rem;
+}
+
+/* Display content when a tab is selected */
+.tabs input[type="radio"]:checked + .tab-label + .tab-content {
+    display: block;
+}
+
+.tabs input[type="radio"]:checked + .tab-label {
+    background-color: var(--aquamarine);
+}
+
+button {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0;
+    margin: 0.3rem 1rem;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+button:hover {
+   opacity: 1;
+}
+
+#CopyCitationText {
+    background: url("../assets/popup/PlaceHolder_Copy.png");
+    background-size: cover;
+    margin-top: 0.6rem;
+}
+
+#CitationText {
+    background-color: var(--maize);
+    padding: 0.5rem;
+    margin: 0 0.4rem 0 0.4rem ;
+    word-break: break-all;
+    border-radius: 0.5rem;
+}
+
+#CitationText p {
+    margin: 0;
+}
+
+#RefreshMetaData {
+    background: url("../assets/popup/PlaceHolder_Refresh.png");
+    background-size: cover;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 0.6rem;
+}
+
+.button-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+section {
+    background-color: var(--tea_green);
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    margin: 0.4rem;
+    border-radius: 0.5rem;
+}
+
+input, select {
+    border: 0;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#Citation-content {
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#Fields-content {
+    border-radius: 0.5rem;
+}
+
+h3 {
+    margin: 0.4rem 0;
+    font-size: 1.2rem;
+}

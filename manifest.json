@@ -1,0 +1,28 @@
+{
+  "name": "CiteThatShi",
+  "description": "Extension for citing websites, journals, videos and more",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": 
+  {
+    "default_popup": "popups/index.html",
+    "default_icon": "assets/icons/PlaceHolder_Nerd_Icon.png"
+  },
+  "content_scripts": 
+  [
+    {
+      "js": 
+      [
+        "scripts/utils/locations.js",
+        "scripts/utils/functions.js",
+        "scripts/utils/scrape.js",
+        "scripts/content.js"
+      ],
+      "matches": 
+      [
+        "https://*/*"
+      ]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

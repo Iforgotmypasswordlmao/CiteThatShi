@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <details open>
+            <summary><h3>CiteThatShi</h3></summary>
+            <article class="divide">
+                <section class="inputsection">
+                    <label for="Method">Reference</label><br>
+                    <select id="Method"></select><br>
+                </section>
+                
+                <section class="inputsection">
+                    <label for="Media">Media</label><br>
+                    <select id="Media"></select>
+                </section>
+            </article>
+            
+        </details>
+        
+        <details>
+            <summary><h4>Fields</h4></summary>
+            <article class="divide">
+                <div class="button-wrapper">
+                    <button id="RefreshMetaData" type="button" class="RefreshButton"></button> 
+                </div>
+
+                <section class="inputsection">
+                    <label for="Authors">Individual Authors (use ',' to separate)</label><br>
+                    <input id="Authors" type="text">
+                </section>
+
+                <section class="inputsection">
+                    <label for="OrgAuthor">Organisation Author</label><br>
+                    <input id="OrgAuthor" type="text">
+                </section>
+
+                <section class="inputsection">
+                    <label for="JournalTitle">Journal Title</label><br>
+                    <input id="JournalTitle" type="text">
+                </section>
+
+                <section class="inputsection">
+                    <label for="JournalVolume">Journal Volume</label><br>
+                    <input id="JournalVolume" type="number">
+                </section>
+
+                <section class="inputsection">
+                    <label for="JournalIssue">Journal Issue</label><br>
+                    <input id="JournalIssue" type="number">
+                </section>
+
+                <section class="inputsection">
+                    <label for="JournalPage">Journal Page Range</label><br>
+                    <input id="JournalPage" type="text">
+                </section>
+
+                <section class="inputsection">
+                    <label for="Publisher">Publisher</label><br>
+                    <input id="Publisher" type="text">
+                </section>
+                
+                <section class="inputsection">
+                <label for="PublishedDate">Publish Date</label><br>
+                    <input id="PublishedDate" type="date"> 
+                </section>  
+                
+                <section class="inputsection">
+                    <label for="AccessedDate">Access Date</label><br>
+                    <input id="AccessedDate" type="date"><br>
+                </section>
+                
+                <section class="inputsection">
+                    <label for="Title">Title</label><br>
+                    <input id="Title" type="text">
+                </section>
+
+                <section class="inputsection">
+                    <label for="DOI">DOI Number</label><br>
+                    <input id="DOI" type="text">
+                </section>
+                
+                <section class="inputsection">
+                    <label for="Url">Url</label><br>
+                    <input id="Url" type="url">
+                </section>
+                
+            </article>
+            
+        </details>
+        <details open>
+            <summary><h4>Citation</h4></summary>
+            <article class="divide">
+                <div class="button-wrapper">
+                    <button id="RefreshCitation" type="button" class="RefreshButton"></button>
+                </div>
+                <div id="CitationText"></div>
+                <div class="button-wrapper">
+                  <button id="CopyCitationText" type="button"></button>  
+                </div>
+            </article>
+            
+        </details>
+        
+        <script src="utils/citationutils.js" type="text/javascript"></script>
+        <script src="utils/citation.js" type="text/javascript"></script>
+        <script src="utils/form.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
